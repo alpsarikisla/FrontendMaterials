@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="scripts/formelemanlari.js"></script>
+        <style>
+            .container
+            {
+                width: 300px;
+                height: 200px;
+                margin: 50px auto;
+                border:1px solid silver;
+                border-radius: 5px;
+                padding: 20px;
+            }
+            .row
+            {
+                padding-bottom: 20px;
+            }
+            .inputbox
+            {
+                width: 280px;
+                outline: none;
+                border: 1px solid gray;
+                padding: 7px;
+                border-radius: 10px;
+            }
+            .inputbox:focus
+            {
+                width: 280px;
+                /*border: 1px solid greenyellow;*/
+                outline: 1px solid aqua;
+                background-color: #dbf5f1;
+                border: 1px solid white;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+        <div class="row">
+            Kullanıcı Adı:<br>
+        <input type="text" class="inputbox" onfocusout="inputvalidate(this)">
+        </div>
+        <div class="row">
+            Şifre:<br>
+        <input type="password" class="inputbox" onfocusout="inputvalidate(this)" >
+        </div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div id="ekran"></div>
+       <script>
+        var metin = "";
+        const sehirler = ["Ankara", "İstanbul", "İzmir", "Adana", "Bursa"]
+        for(var i = 0; i < sehirler.length; i++)
+        {
+            metin += sehirler[i] + "<br/>";
+        }
+        document.getElementById("ekran").innerHTML = metin
+
+        for(var sehir in sehirler)
+        {
+            metin += sehirler[sehir] + "<br/>";
+        }
+        document.getElementById("ekran").innerHTML = metin
+       </script>
+    </body>
+</html>

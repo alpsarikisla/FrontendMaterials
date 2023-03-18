@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        Sonuç = <label id="ekran"></label>
+       <script>
+        var metin = "Gubaretleri Guplatmayın!!";
+        var ek = "Uleynnn";
+        let isim = "Alp";
+        let soyisim = "Sarıkışla";
+        var karaktersayi = metin.length;
+        /*document.getElementById("ekran").innerHTML = karaktersayi*/
+        var parca1 = metin.slice(7,13);
+        /*document.getElementById("ekran").innerHTML = parca1;*/
+        var parca2 = metin.slice(7);
+        /*document.getElementById("ekran").innerHTML = parca2;*/
+        var parca3 = metin.slice(-6);
+        /*document.getElementById("ekran").innerHTML = parca3;*/
+        /*var yenimetin = metin.replace("Gubaret", "Babaret");*/
+        /*document.getElementById("ekran").innerHTML = yenimetin.toUpperCase();*/
+        /*document.getElementById("ekran").innerHTML = yenimetin.toLowerCase();*/
+        /*document.getElementById("ekran").innerHTML = metin.concat(" ", ek, " " , "!!!");*/
+        /*alert(metin.trim());*/
+        /*document.getElementById("ekran").innerHTML = metin.padStart(30,"?");*/
+        /*document.getElementById("ekran").innerHTML = "CharAt = " + metin.charAt(5);*/
+        /*document.getElementById("ekran").innerHTML = "charCodeAt = " + metin.charCodeAt(5);*/
+        /*document.getElementById("ekran").innerHTML = metin.indexOf("Gup");*/
+        /*document.getElementById("ekran").innerHTML = metin.lastIndexOf("leri");*/
+        let merhaba = `Merhaba ${isim} ${soyisim}`;
+        document.getElementById("ekran").innerHTML = merhaba
+       </script>
+    </body>
+</html>

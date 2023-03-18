@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>       
+    </head>
+    <body>
+        <h2>Sık kıllanılan olaylar</h2>
+        <p><b>On Click</b></p>
+        <button type="button" onclick="alert('Tıklandı')"> On Click</button>
+        <p><b>On Mouseover</b></p>
+        <button type="button" onmouseover="alert('Mouse Over')">Mouse Over</button>
+        <p><b>On Mouseout</b></p>
+        <button type="button" onmouseout="alert('Mouse Out')">Mouse Out</button>
+        <p><b>On Change</b></p>
+        <input type="text" onchange="alert('Değişti')">
+        <p><b>On Input</b></p>
+        <input type="text" id="metinkutu" oninput="oninputmetot()">
+        <label id="message"></label>
+        <p><b>On Change</b></p>
+        <select id="sehir" onchange="onchangemetot()">
+            <option>Ankara</option>
+            <option>İstanbul</option>
+            <option>İzmir</option>
+            <option>Eskişehir</option>
+        </select>
+        <label id="sehirmessage"></label>
+        <p><b>On KeyUp</b></p>
+        Lütfen Adınızı Giriniz: 
+        <input type="text" id="tb_isim" onkeyup="isimkeyup()" onclick="secildi()" placeholder="İsminiz">
+        <p><b>On Focus</b></p>
+        Şifreniz =
+        <input type="password" onfocus="focusfunction(this)" onfocusout="focusoutfunction(this)"><br>
+        Kullanıcı Adınız=
+        <input type="text" onfocus="focusfunction(this)" onfocusout="focusoutfunction(this)" style=" outline: none !important;">
+        <script>
+            function oninputmetot()
+            {
+                var metin = document.getElementById("metinkutu").value
+                document.getElementById("message").innerHTML = "Yazdığınız = " + metin
+            }
+            function onchangemetot()
+            {
+                var secilen = document.getElementById("sehir").value
+                document.getElementById("sehirmessage").innerHTML = "Seçilen Şehir = " + secilen
+            }
+            function isimkeyup()
+            {
+                var inputbox = document.getElementById("tb_isim")
+                inputbox.value = inputbox.value.toUpperCase();
+            }
+            function secildi()
+            {
+                var inputbox = document.getElementById("tb_isim")
+                inputbox.style.backgroundColor= "#ededed"
+                inputbox.style.borderColor= "Gray"
+            }
+            function focusfunction(a)
+            {
+                a.style.borderColor = "aqua";
+            }
+            function focusoutfunction(a)
+            {
+                a.style.borderColor = "silver";
+            }
+        </script>
+    </body>
+</html>

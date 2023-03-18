@@ -1,0 +1,42 @@
+*,h1,h2,h3,h4,h5,h6{
+    padding: 0;margin: 0;
+}
+#eleman{
+    color: gray;
+}
+.elemansinif{
+    color:aqua !important;
+}
+.kalinyazi
+{
+    font-weight: 900;
+    color: red;
+}
+li
+{
+    font-size: 20pt;
+}
+li.kalinyazi
+{
+    font-size: 50pt;
+}
+.googlefont{
+    font-family: 'Gajraj One', cursive;
+    font-size: 20pt;
+    color: orangered;
+    margin-bottom: 50px;
+}
+.homebutton
+{
+    background-color: orangered;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: calibri;
+}
+.homebutton:hover{
+    color: orangered;
+    background-color: white;
+    border: 1px solid orangered;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+       <p id="eleman" style="visibility: hidden;">İçerik</p>
+       <div onmouseover="deneme(1)" onmouseout="denemeout(1)">
+            <p id="1">
+                Deneme İçerik
+            </p>
+       </div>
+      
+       <script>
+        // document.getElementById("eleman").style.backgroundColor = "blue";
+        document.getElementById("eleman").style.visibility = "visible";
+        function deneme(a)
+        {
+            document.getElementById(a).style.visibility = "hidden"
+        }
+        function denemeout(a)
+        {
+            document.getElementById(a).style.visibility = "visible"
+        }
+       </script>
+    </body>
+</html>

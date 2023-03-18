@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>id seciciler</h3>
+    <p>Ben Bir Paragrafım</p>
+    <p id="bastaci">Ben id li bir paragrafım</p>
+
+    <h3>class seciciler</h3>
+    <label>Bu bir label</label><br><br>
+    <label class="kutu">Mesaj Label 'ı</label><br/><br/>
+    <button id="btn_gizle">Bana Tıkla!!!</button>
+
+    <h3>this Kullanımı</h3>
+    <button id="btn_this">Tıkla</button>
+
+    <h3>* Kullanımı</h3>
+    <button id="btn_hepsi">Hepsini Yok Et</button>
+    <script>
+        $(document).ready(function(){
+        $("#btn_gizle").click(function(){
+            $("#bastaci").hide();
+            $(".kutu").hide();
+        });
+        $("#btn_this").click(function(){
+            $(this).hide();
+        });
+        $("#btn_hepsi").click(function(){
+            $("*").hide();
+        });
+    })
+    </script>
+</body>
+</html>

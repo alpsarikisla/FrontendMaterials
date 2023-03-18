@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="scripts/iyiyasa.js"></script>
+        <script>
+            function fonksiyonum()
+            {
+                document.getElementById("yazi").innerHTML = "Deneme";
+            }
+        </script>
+    </head>
+    <body>
+        <h3>İlk Javascript Dokümanım</h3>
+        <button type="button" onclick="document.getElementById('yazi').innerHTML = 'tıkladım'"> Bana Tıkla </button>
+
+        <button type="button" onclick="document.getElementById('yazi').style.color = 'Red'"> Renk Değiştir </button>
+
+        <button type="button" onclick="fonksiyonum()">Head Bloğu</button>
+        <br>
+        <button type="button" onclick="ikincifonksiyonum()">İkinci Fonksiyon</button>
+        <br>
+        <button type="button" onclick="ucuncufonksiyonum()">Üçüncü Fonksiyon</button>
+        <br>
+        <label id="yazi">Ben Bir Label'ım</label>
+
+        <script>
+            alert("Hüseyin bu senin için");
+
+            function ikincifonksiyonum()
+            {
+                alert("Nabünüz len");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>getElementById() metodu</h3>
+    <label id="ekran"></label>
+
+    <h3>getElementByClassName() metodu</h3>
+    <div class="kutu">Kutu 1</div>
+    <div class="kutu">Kutu 2</div>
+    <div class="kutu" name="murtaza">Kutu 3</div>
+    <p>Paragraf etiketi içerisindeki <span class="kutu"> span </span> Etiketi kutu sınıfını alıyor</p>
+
+    <h3>getElementByName() metodu</h3>
+    <label name="murtaza"> Murtaza Label'ı</label>
+
+    <h3>getElementByTagName() metodu</h3>
+    <script>
+        document.getElementById("ekran").innerHTML = "Merhaba Label";
+        const kutular = document.getElementsByClassName("kutu");
+        for(var i = 0; i< kutular.length; i++)
+        {
+            kutular[i].style.backgroundColor = "pink";
+        }
+        kutular[0].innerHTML = "Nabünüz len!!!";
+        const isimler =  document.getElementsByName("murtaza");
+        for(var i = 0; i< isimler.length; i++)
+        {
+            isimler[i].style.color = "red";
+        }
+        const basliklar = document.getElementsByTagName("h3");
+        alert(basliklar[1].innerHTML)
+    </script>
+</body>
+</html>

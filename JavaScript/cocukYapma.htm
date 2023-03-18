@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btn_tikla()">Tıkla</button>
+    <ul id="liste">
+        <li>Ankara</li>
+    </ul>
+    <script>
+        var i = 1;
+        function btn_tikla()
+        {
+            const node = document.createElement("li");
+            const metinnode = document.createTextNode("Süleyman" + i);
+            node.appendChild(metinnode);
+            document.getElementById("liste").appendChild(node);
+            i++;
+        }
+        
+    </script>
+</body>
+</html>

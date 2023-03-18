@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $("#btn_gizle").click(function(){
+        $("#bastaci").hide();
+        $(".kutu").hide();
+    });
+    $("#btn_this").click(function(){
+        $(this).hide();
+    });
+    $("#btn_hepsi").click(function(){
+        $("*").hide();
+    });
+})

@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>JQuery Kullanımı</h1>
+    <p>Ben Bir Paragrafım</p> <p>Ben Bir Paragrafım</p> <p>Ben Bir Paragrafım</p>
+    <button>Paragrafı gizlemek için tıkla</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function()
+            {
+                $("p").hide();
+            })
+        })
+    </script>
+</body>
+</html>
