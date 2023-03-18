@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn_goster">Gelsin Kutular</button><br>
+    <button id="btn_gizle">Gitsin Kutular</button><br>
+    <button id="btn_gizlegoster">Kutuları Gizle Göster</button><br>
+    <button id="btn_biryerekadar">Kutuları Transparan Yap</button>
+    <div id="div1" style="background-color:hotpink;"></div>
+    <div id="div2" style="background-color:rgb(25, 247, 0);"></div>
+    <div id="div3" style="background-color:rgb(0, 255, 217);"></div>
+    <script>
+        $(document).ready(function(){
+            $("#btn_goster").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("fast");
+                $("#div3").fadeIn(3000);
+            });
+            $("#btn_gizle").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+            $("#btn_gizlegoster").click(function(){
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+            });
+            $("#btn_biryerekadar").click(function(){
+                $("#div1").fadeTo("slow", 1);
+                $("#div2").fadeTo("slow", 0.15);
+                $("#div3").fadeTo("slow", 0.50);
+            });
+        })
+    </script>
+</body>
+</html>

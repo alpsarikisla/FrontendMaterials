@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, optio molestiae harum, possimus repellendus suscipit sed amet atque nihil reprehenderit modi ratione maxime quisquam impedit, et ipsa assumenda quaerat sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto mollitia inventore et harum odit iure ipsam similique corporis doloremque laborum. Expedita eum adipisci at doloribus temporibus illum, laudantium qui eligendi.</p>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, perferendis asperiores odio aliquam ex et quas dicta sit, omnis eum accusantium, atque voluptas sint sed beatae minima? Similique, iste illo?</div>
+    <button id="hide">Gizle</button>
+    <button id="show">Göster</button>
+    <div style="min-height: 50px;">
+        <p id="p_toggle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequuntur inventore deserunt libero unde dolor, beatae sed itaque ea odit. Quae magni sequi distinctio repellendus eos. Error temporibus ipsam nostrum!</p>
+    </div>
+    <button id="btn_toggle">Paragrafı Göster Gizle</button>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide(1000);
+            });
+            $("#show").click(function(){
+                $("p").show(500);
+            })
+            $("#btn_toggle").click(function(){
+                $("#p_toggle").toggle(1000);
+            })
+        })
+    </script>
+</body>
+</html>
