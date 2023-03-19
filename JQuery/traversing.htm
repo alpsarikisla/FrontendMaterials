@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+    <style>
+       .main *
+        {
+            display: block;
+            border:2px solid lightgray;
+            color: lightgray;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            /*$("span").parent().css({"color":"red", "border":"2px solid red"})*/
+            $("span").parent().css({"color":"red", "border":"2px solid red"})
+        })
+    </script>
+</head>
+<body class="main">
+    Body(great-great-grandparent)
+        <div style="width: 500px; ">div (great-grandparent)
+            <ul>ul(GrandParent)
+                <li>li(direct parent)
+                    <span>Span</span>
+                </li>
+            </ul>
+        </div>
+</body>
+</html>

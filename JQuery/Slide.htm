@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+    <style>
+        #panel,#acordion{
+            text-align: center;
+            border: solid 1px #dedede;
+        }
+        #acordion
+        {
+            background-color: #c0c0c0;
+            padding: 10px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        #panel
+        {
+            background-color:#fefefe ;
+            padding: 20px;
+            border-top: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="acordion">Detay için tıklayınız</div>
+    <div id="panel">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit amet nisi facere animi? Ratione est animi exercitationem natus soluta voluptate necessitatibus voluptas, porro quibusdam cupiditate impedit distinctio voluptatibus? Dolorem?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, exercitationem inventore. Ad facilis modi exercitationem error. Explicabo, enim. Illo, exercitationem explicabo totam tenetur veritatis aperiam repellendus praesentium sunt ullam laudantium.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis totam neque distinctio? Ea mollitia perspiciatis quidem possimus odit error, nam, nemo tenetur temporibus sed eaque velit quibusdam dolore accusantium ratione!
+    </div>
+    <p>slideDown, slideUp, SlideToggle</p>
+    <script>
+        $(document).ready(function(){
+            $("#acordion").click(function(){
+                $("#panel").slideToggle("slow");
+            })
+        })
+    </script>
+</body>
+</html>

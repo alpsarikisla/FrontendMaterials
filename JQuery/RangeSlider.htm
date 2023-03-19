@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .slider
+       {
+            -webkit-appearance: none;
+            width: 300px;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+       }
+       .slider:hover{
+        opacity: 1;
+       }
+       .slider::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: rgb(59, 88, 91);
+        cursor: pointer;
+       }
+       .slider::-webkit-range-thumb{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: rgb(59, 88, 91);
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <input id="rn_slider" type="range" max="100" min="0" value="70" class="slider">
+    <p>Değer = <span id="spn_counter"></span></p>
+    <script>
+        var slider = document.getElementById("rn_slider");
+        var cikis = document.getElementById("spn_counter");
+        cikis.innerHTML = slider.value;
+
+        slider.oninput = function()
+        {
+            cikis.innerHTML = slider.value
+        }
+    </script>
+</body>
+</html>

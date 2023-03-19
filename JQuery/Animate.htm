@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+    <style>
+        .kutu{
+            background-color: palevioletred;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            /*max-height: 250px;*/
+        }
+    </style>
+</head>
+<body>
+    <button id="a1">Animasyon Başlat</button>
+    <button id="a2">Ekleme Sistemi</button>
+    <button id="a3">Toggle Kullanımı</button>
+    <button id="a4">300 500</button>
+    <button id="a5">Font ile İlgili</button>
+    <div class="kutu">Kutu 1</div>
+    <script>
+        $(document).ready(function(){
+            $("#a1").click(function(){
+                $("div").animate({
+                    left:'250px',
+                    opacity:0.5,
+                    height:'150px',
+                    width:'150px',
+                }).css("background","red");
+            });
+            $("#a2").click(function(){
+                $("div").animate({
+                    height:'+=50px',
+                    width:'+=50px',
+                })
+            });
+            $("#a3").click(function(){
+                $("div").animate({
+                    height:'toggle'
+                })
+            });
+            $("#a4").click(function(){
+                var kutu = $("div");
+                kutu.animate({height:'300px'}, "slow");
+                kutu.animate({width:'300px'}, "slow");
+                kutu.animate({height:'100px'}, "slow");
+                kutu.animate({width:'100px'}, "slow");
+            });
+            $("#a5").click(function(){
+            var kutu = $("div");
+               kutu.animate({left:'250px'}, "slow");
+               kutu.animate({fontSize:'20pt'}, "slow");
+            })
+        })
+    </script>
+</body>
+</html>
