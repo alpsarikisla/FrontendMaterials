@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="assets/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../JQuery/assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <span>Genişlik</span><span id="lbl_genislik"></span>
+    <div class="container" style="background-color: yellowgreen;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugit facere veritatis quasi a sed, vero officiis maxime ducimus amet voluptates eligendi eum atque fuga explicabo molestias, voluptate, expedita labore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iste suscipit atque fuga iure blanditiis corporis quisquam beatae accusantium, voluptatibus totam dignissimos eum similique? Laboriosam quisquam explicabo qui sit hic!
+    </div>
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th> &#60;576 px Extra Small </th>
+                <th> &#62;576 px Small </th>
+                <th> &#62;768 px Medium </th>
+                <th> &#62;992 px Large </th>
+                <th> &#62;1200 px Extra Large </th>
+                <th> &#62;1400 px xxl </th>
+            </tr>
+            <tr>
+                <td>100%</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#lbl_genislik").html($(window).width());
+        })
+        $(window).resize(function(){
+            $("#lbl_genislik").html($(window).width());
+        })
+    </script>
+</body>
+</html>

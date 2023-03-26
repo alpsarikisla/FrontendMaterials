@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+    <style>
+        #sevimliBirDiv
+        {
+            width: 300px;
+            height: 150px;
+            background-color: #e3e3e3;
+            border: 1px solid silver;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sevimliBirDiv"></div>
+    <br>
+    <button id="btn_info">div boyutlarını görüntüle</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn_info").click(function(){
+                var metin = "";
+                metin += "Genişliği = "+ $("#sevimliBirDiv").width() + "<br>";
+                metin += "Yüksekliği = " + $("#sevimliBirDiv").height() + "<br>";
+                metin += "İç Genişlik = " + $("#sevimliBirDiv").innerWidth() + "<br>";
+                metin += "İç Yükseklik = " + $("#sevimliBirDiv").innerHeight() + "<br>";
+                metin += "Dıştan Genişlik = " + $("#sevimliBirDiv").outerWidth() + "<br>";
+                metin += "Dıştan Yükseklik = " + $("#sevimliBirDiv").outerHeight() + "<br>";
+                metin += "Margin Dahil Genişlik = " + $("#sevimliBirDiv").outerWidth(true) + "<br>";
+                metin += "Margin Dahil Yükseklik = " + $("#sevimliBirDiv").outerHeight(true) + "<br>";
+                $("#sevimliBirDiv").html(metin);
+            })
+        })
+    </script>
+</body>
+</html>

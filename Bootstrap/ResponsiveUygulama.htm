@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{width: 100px; height: 40px; background-color: #ddd; padding: 30px; margin: 15px;}
+        @media screen and (min-width:900px) {
+            #div1{color:white; background-color: rgb(19, 18, 18);}
+        }
+        @media  screen and (min-width:600px) and (max-width:900px) {
+            #div2{color:white; background-color: rgb(19, 18, 18);}
+        }
+        @media  screen and (min-width:500px) and (max-width:600px) {
+            #div3{color:white; background-color: rgb(19, 18, 18);}
+        }
+        @media  screen and (max-width:500px) {
+            #div4{color:white; background-color: rgb(19, 18, 18);}
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu" id="div1">900px üstü ise</div>
+    <div class="kutu" id="div2">600px - 900px arası ise</div>
+    <div class="kutu" id="div3">500px - 600px arası ise</div>
+    <div class="kutu" id="div4">500px altı ise</div>
+</body>
+</html>

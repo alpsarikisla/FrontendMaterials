@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="metin1">Metin 1</p>
+    <p id="metin2">Metin 2</p>
+    <p>İsim = <input type="text" id="metin3"></p>
+    <button id="btn1">Metin Ata</button>
+    <button id="btn2">HTML Ata</button>
+    <button id="btn3">Değer Ata</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#metin1").text("Merhaba Dünya!!!")
+            });
+            $("#btn2").click(function(){
+                $("#metin2").html("<b>Merhaba Dünya</b>")
+            });
+            $("#btn3").click(function(){
+                $("#metin3").val("Merhaba Dünya")
+            });
+        })
+    </script>
+</body>
+</html>

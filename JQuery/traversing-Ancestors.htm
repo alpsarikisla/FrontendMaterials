@@ -18,7 +18,7 @@
     <script>
         $(document).ready(function(){
             /*$("span").parent().css({"color":"red", "border":"2px solid red"})*/
-            $("span").parent().css({"color":"red", "border":"2px solid red"})
+            $("span").parentsUntil("body").css({"color":"red", "border":"2px solid red"})
         })
     </script>
 </head>
@@ -31,5 +31,8 @@
                 </li>
             </ul>
         </div>
+        Parent = Bir Üst parent<br>
+        Parents = Tüm Üst parentlar<br>
+        ParentsUntil("") = Belirtilen parent'a kadar
 </body>
 </html>

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Metin 1</p>
+    <p>Metin 2</p>
+    <ol>
+        <li>Ankara</li>
+        <li>İstanbul</li>
+        <li>Eskişehir</li>
+    </ol>
+    <div class="kutu" style="width: 100px; height: 100px; background-color: blueviolet;">İçi Dolu Bir div</div>
+    <br>
+    <button id="btn_paragraf">Metin Ekle</button>
+    <button id="btn_liste">Liste Elemanı Ekle</button>
+    <button id="btn_liste2">Başa Liste Elemanı Ekle</button>
+    <button id="btn_ekle">Eleman Ekle</button>
+    <button id="btn_temizle">Temizle</button>
+    <button id="btn_sil">Sil</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn_paragraf").click(function(){
+                $("p").append("<b>Sonradan Eklendim</b>")
+            });
+            $("#btn_liste").click(function(){
+                $("ol").append("<li>Sonradan Eklendim</li>")
+            });
+            $("#btn_liste2").click(function(){
+                $("ol").prepend("<li>Sonradan Eklendim</li>")
+            });
+            $("#btn_ekle").click(function(){
+                $(".kutu").before("<b>Öncesine Eklendim</b>");
+                $(".kutu").after("<b>Sonrasına Eklendim</b>");
+            });
+            $("#btn_temizle").click(function(){
+                $(".kutu").empty();
+            });
+            $("#btn_sil").click(function(){
+                $(".kutu").remove();
+            });
+        })
+    </script>
+</body>
+</html>
