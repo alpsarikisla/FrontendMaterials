@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="assets/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../JQuery/assets/scripts/jquery-3.6.4.min.js"></script>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+       <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Checkbox - Radio Button</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h3>Checkbox</h3>
+                    <hr>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="cb_secenek" value="Deneme">
+                        <label class="form-check-label" for="cb_secenek">Seçenek 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="cb_secenek2" value="Deneme" checked>
+                        <label class="form-check-label" for="cb_secenek2">Seçenek 2</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="cb_secenek3" value="Deneme" disabled>
+                        <label class="form-check-label" for="cb_secenek3">Seçenek 2</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Radiobutton</h3>
+                    <hr>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="rb_1" name="secenekler">
+                        <label class="form-check-label" for="rb_1"> Evli </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="rb_2" name="secenekler">
+                        <label class="form-check-label" for="rb_2"> Bekar </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="rb_3" name="secenekler">
+                        <label class="form-check-label" for="rb_3"> Belirtmek İstemiyorum </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Toggle Switch</h3>
+                    <hr>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="cb_secenek" value="Deneme">
+                        <label class="form-check-label" for="cb_secenek">IPhone 11'im Var (Özelim)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

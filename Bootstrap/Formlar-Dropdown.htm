@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="assets/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../JQuery/assets/scripts/jquery-3.6.4.min.js"></script>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Dropdown Menü</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label>Sehir Seçiniz</label>
+                        <select class="form-select" multiple>
+                            <option>Adana</option>
+                            <option>Ankara</option>
+                            <option>Eskişehir</option>
+                            <option>İstanbul</option>
+                            <option>izmir</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4">
+                        <label>Sehir Seçiniz</label>
+                        <select class="form-select">
+                            <option value="0">Seçiniz...</option>
+                            <option value="1">Adana</option>
+                            <option value="2">Ankara</option>
+                            <option value="3">Eskişehir</option>
+                            <option value="4">İstanbul</option>
+                            <option value="5">izmir</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                        <h3>Boyutlar</h3>
+                        <select class="form-select form-select-lg">
+                            <option value="0">Seçiniz...</option>
+                            <option value="1">Adana</option>
+                            <option value="2">Ankara</option>
+                            <option value="3">Eskişehir</option>
+                            <option value="4">İstanbul</option>
+                            <option value="5">izmir</option>
+                        </select>
+                        <select class="form-select mt-3">
+                            <option value="0">Seçiniz...</option>
+                            <option value="1">Adana</option>
+                            <option value="2">Ankara</option>
+                            <option value="3">Eskişehir</option>
+                            <option value="4">İstanbul</option>
+                            <option value="5">izmir</option>
+                        </select>
+                        <select class="form-select form-select-sm mt-3" disabled>
+                            <option value="0">Seçiniz...</option>
+                            <option value="1">Adana</option>
+                            <option value="2">Ankara</option>
+                            <option value="3">Eskişehir</option>
+                            <option value="4">İstanbul</option>
+                            <option value="5">izmir</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Aramak istediğiniz metni giriniz</label>
+                        <input type="text" class="form-control" id="sehir" list="sehirler">
+                        <datalist id="sehirler">
+                            <option value="Adana"></option>
+                            <option value="Ankara"></option>
+                            <option value="Eskişehir"></option>
+                            <option value="İstanbul"></option>
+                            <option value="İzmir"></option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
