@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/angular-1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div>
+        ng-app  : AngularJS uygulamasını başlatır <br>
+        ng-init : Uygulama Verilerini başlatır(Veri tanımlamalarının yapıldığı yer)<br>
+        ng-model: HTML kontrollerinin(input, select) değerlerini uygulama verilerine bağlar<br>
+        <div ng-app="" ng-init="adet=1;fiyat=5">
+            <table>
+                <tr>
+                    <td>Adet</td>
+                    <td>
+                        <input type="number" ng-model="adet">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Fiyat</td>
+                    <td>
+                        <input type="number" ng-model="fiyat">
+                    </td>
+                </tr>
+            </table>
+            <p><b>Toplam = {{adet * fiyat}}</b></p>
+        </div>
+    </div>
+</body>
+</html>

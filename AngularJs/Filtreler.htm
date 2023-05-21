@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/angular-1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <h1>Expressions</h1>
+    <div ng-app="uygulama" ng-controller="personel">
+        <p>Personel Adı = {{isim | uppercase}}</p>
+        <p>Personel soyadı = {{soyisim | lowercase}}</p>
+    </div>
+    <script>
+        angular.module('uygulama',[]).controller('personel', function($scope){
+            $scope.isim = "Alp",
+            $scope.soyisim = "Sarıkışla"
+        });
+    </script>
+</body>
+</html>

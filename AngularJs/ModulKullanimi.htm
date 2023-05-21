@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modül Kullanımı</title>
+    <script src="assets/angular-1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <h3>Controller ile kullanım</h3>
+    <div ng-app="uygulama" ng-controller="kontrolum">
+        {{ isim + ' ' + soyisim}}
+    </div>
+    <script>
+        var app = angular.module("uygulama", []);
+        app.controller("kontrolum", function($scope){
+            $scope.isim = "Alp";
+            $scope.soyisim = "Sarıkışla";
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/angular-1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <form ng-app="" name="kayit">
+        Email: <input type="email" name="adres" ng-model="text">
+        <span ng-show="kayit.adres.$error.email">Email adresi hatalı</span>
+        <p>Valid {{kayit.adres.$valid}}(Eğer True ise kriterlere uygun)</p>
+        <p>Dirty {{kayit.adres.$dirty}}(Eğer True ise Değiştirildi)</p>
+    </form>
+</body>
+</html>

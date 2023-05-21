@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/angular-1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <h3>Expressions</h3>
+    <!-- 
+    <div ng-app="" ng-init="rengim='green'">
+        <input style="background-color:{{rengim}}" ng-model="rengim">
+    </div>
+   -->
+   <!--
+    <div ng-app="" ng-init="adet=5;fiyat=10">
+        <p> Toplam = {{adet*fiyat}}</p>
+   </div>
+   -->
+   <!-- 
+    <div ng-app="" ng-init="personel={isim:'Alp', soyad:'Sarıkışla'}">
+    <p>Personel Adı {{personel.isim + ' ' + personel.soyad}}</p>
+    <p>Personel Adı <span ng-bind="personel.isim + ' ' + personel.soyad"></span></p>
+   </div>
+   -->
+   <div ng-app="" ng-init="sayilar=[15,20,45,21,13]">
+    <p>3. sayı = {{sayilar[3]}}</p>
+        <div>
+            4. Sayı = <span ng-bind="sayilar[4]"></span>
+        </div>
+   </div>
+</body>
+</html>

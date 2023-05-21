@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/angular-1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <!-- 
+    <div ng-app="" ng-init="isimler=['Hüseyin','Hacı','Oktay']">
+        <ul>
+            <li ng-repeat="x in isimler">
+                {{x}}
+            </li>
+        </ul>
+    </div>
+    -->
+    <div ng-app="" ng-init="isimler=[
+    {isim:'Hasan Hüseyin', memleket:'Eskişehir'},
+    {isim:'Hacı Mustafa', memleket:'Adana'},
+    {isim:'Oktay', memleket:'Bulgaristan'}]">
+    <ul>
+        <li ng-repeat="x in isimler">
+            {{x.isim + ' ' + x.memleket}}
+        </li>
+    </ul>
+    </div>
+</body>
+</html>
